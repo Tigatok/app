@@ -1,0 +1,494 @@
+html{
+	padding:0;
+	margin:0;
+}
+
+body{
+	font-family: Arial;
+	padding:0;
+	margin: 0;
+	background: #383838;
+}
+
+p {
+     font-size: 25px;
+}
+
+.container{
+	width: 100%;
+	margin-top: 20px;
+}
+
+.error{
+	height: 40px;
+	width: 300px;
+	color: #a94442;
+	border: solid 2px #a94442;
+	background: #F2DEDE;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 5px;
+	margin:auto;
+	margin-top: 20px;
+}
+
+.notFound{
+	color: white;
+	text-align: center;
+}
+
+#navbar{
+	z-index:1;
+	width:100%;
+	height: 70px;
+	background: #191919;
+	vertical-align: middle;
+}
+
+.navbar_wrapper{
+	width: 1230px;
+	margin: auto;
+}
+
+.search_wrapper{
+	padding-top: 10px;
+	font-size: 0;
+	width: 580px;
+	margin-left: 410px;
+}
+
+.search_field{
+	outline:none;
+	display: inline-block;
+	border-right: none;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+    height:50px;
+    width:350px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.search_field:focus{
+	border-right: 1px solid #0EBFE9;
+	border-left: 1px solid #0EBFE9;
+	border-top: 1px solid #0EBFE9;
+	border-bottom: 1px solid #0EBFE9;
+}
+
+#region{
+	outline:none;
+	display: inline-block;
+	width:90px;
+	height:50px;
+	border-top: 1px solid white;
+	border-bottom: 1px solid white;
+	border-left: none;
+	border-right:none;
+	font-size: 20px;
+}
+
+.region:hover, {
+	cursor: pointer;
+}
+
+.submit{
+	display: inline-block;
+	background:URL('/images/search.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	width:60px;
+	height:50px;
+	border: solid 1px #0EBFE9;
+	background-color: #0EBFE9;
+	color:white;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.submit:hover, .submit:focus{
+	background:URL('/images/search.png');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: #0dabd1;
+	cursor: pointer;
+}
+
+.summoner_wrapper{
+	width:1230px;
+	margin: auto;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.ranked_wrapper{
+	margin-right: 10px;
+	float: left;
+	width: 400px;
+}
+
+.rankedStats{
+	display: block;
+	width: 400px;
+	border: solid 2px black;
+	background: #191919;
+	margin-bottom: 5px; 
+}
+
+.stats_wrapper{
+	margin:auto;
+	height: 65px;
+}
+
+.stats{
+	position: relative;
+	top: 5px;
+   	margin: auto;
+	width: 380px;
+	height: 55px;
+}
+
+.ranked_name{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	color: white;
+	width: 90px;
+	margin-left: 5px; 
+	font-size: 13px;
+}
+
+.ranked_winloss{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 10px;
+	width: 90px;
+	color: white;
+	text-align: right;
+	margin-right: 40px;
+}
+
+.ranked_kda{
+	position: relative;
+	display: inline-block;
+	margin: auto;
+	color: white;
+	width: 90px;
+	vertical-align: top;
+	margin-top: 10px;
+	text-align: center;
+}
+
+.win_rate{
+	position: relative;
+	margin-top: 5px;
+	font-size: 23px;
+}
+
+.mastery_wrapper{
+	display: block;
+	width: 400px;
+	border: solid 2px black;
+	background: #191919;
+}
+
+.mastery{
+	margin:auto;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	width: 390px;
+	color: white;
+}
+
+.champ_name{
+	font-size: 11px;
+}
+
+.points{
+	font-size: 20px;
+	color: green;
+}
+
+.champ_mastery{
+	position: relative;
+	display: inline-block;
+	width: 130px;
+}
+
+.champ_mastery img{
+	border-radius: 50%;
+}
+
+.mastery_info {
+	text-align: center;
+}
+
+.summoner{
+	position: relative;
+	display: inline-block;
+	width: 816px;
+	margin:auto;
+}
+
+.info{
+	width:816px;
+	margin: auto;
+	margin-bottom: 5px;
+	background: #191919;
+	border: solid 2px black;
+	color: white;
+}
+
+.profInfo{
+	display: inline-block;
+	vertical-align: top;
+	font-size: 30px;
+	margin-left: 10px;
+	margin-top: 7px; 
+}
+
+.level{
+	font-size: 15px;
+}
+
+.title{
+	height:30px;
+	line-height: 30px;
+	font-size: 18px;
+	background: #000000;
+	text-align: center;
+	color:white;
+}
+
+.ranked{
+	margin: auto;
+	margin-bottom: 5px;
+	position: relative;
+	width: 820px;
+	font-family: sans-serif;
+	font-size: 15px;
+	text-align: center;
+}
+
+#threes{
+	display: inline-block;
+	margin: auto;
+	width: 266px;
+	height:282px;
+	border: solid 2px black;
+	background: #191919;
+}
+
+#soloq{
+	display: inline-block;
+	margin: auto;
+	width: 266px;
+	height:282px;
+	margin-right: 5px;
+	margin-left: 5px;
+	border: solid 2px black;
+	background: #191919;
+}
+
+#fives{
+	display: inline-block;
+	margin: auto;
+	width: 266px;
+	height:282px;
+	border: solid 2px black;
+	background: #191919;
+}
+
+.rankedinfo{
+	color:white;
+}
+
+.match_history{
+	background: #191919;
+	width: 820px;
+	margin: auto;
+	padding-top: 5px;
+}
+
+
+.match_history:last-child {
+	padding-bottom: 5px;
+	margin-bottom: 5px;
+}
+
+.w{
+	color:#00c300;
+}
+
+.l{
+	color:red;
+}
+
+.win{
+	position: relative;
+	background: #C8FFC8;
+	margin: auto;
+	width: 806px;
+	height: 125px;
+	border: solid 2px green;
+}
+
+.loss{
+	position: relative;
+	background: #FDEAE9;
+	margin: auto;
+	width: 806px;
+	height: 125px;
+	border: solid 2px red;
+}
+
+.headerW{
+	color:green;
+	width:700px;
+	margin: auto;
+	margin-top: 2px;
+	font-size:13px;
+}
+
+.headerL{
+	color:red;
+	width:700px;
+	margin: auto;
+	margin-top: 2px;
+	font-size:13px;
+}
+
+.outcome{
+	display: inline-block;
+	width: 108px;
+	font-size: 16px;
+}
+
+.gameMode{
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+}
+
+.duration{
+	display: inline-block;
+	width: 108px;
+	margin-right:36px;
+	text-align: center;
+}
+
+.timeAgo{
+	display: inline-block;
+	width: 150px;
+	text-align: center;
+}
+
+.gameInfo{
+   	position: absolute;
+   	margin: auto;
+   	width: 700px;
+   	height: 70px;
+   	top: 50%;
+   	margin-top: -35px;
+   	margin-left: 53px;
+}
+
+.champ{
+	display:inline-block;
+}
+
+.name{
+	position: absolute;
+	width:70px;
+	text-align: center;
+	font-size: 12px;
+}
+
+.block{
+	display: inline-block;
+	margin-right: 2px;
+	color: #191919;
+	font-weight: bold;
+}
+
+.score{
+	position: relative;
+	width: 150px;
+	height: 70px;
+	text-align: center;
+	vertical-align: top;
+	display:inline-block;
+}
+
+.scores{
+	position: relative;
+	font-size: 20px;
+	top:15px;
+}
+
+.kda {
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.spellImg{
+	display: block;
+	height: 34px;
+	width: 34px;
+}
+.spellImg:first-child{
+	margin-bottom: 2px;
+}
+
+.items{
+	position: relative;
+	display: inline-block;
+	width: 108px;
+}
+
+.trinket{
+	position: relative;
+	height: 70px;
+	top:17px;
+	display: inline-block;	
+	vertical-align: top;
+}
+
+.otherInfo{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	top: 17px;
+	width: 150px;
+	text-align: center;
+}
+
+.dmg{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+	font-size: 15px;
+	top: 18px;
+	text-align: center;
+}
+
+.items img, .trinket img{
+	margin-bottom: 1px;
+	margin-left: 1px;
+	margin-right: 1px;
+}
+
+#footer {
+  	position: fixed;
+  	width: 100%;
+  	background: #191919;  
+  	padding-top: 5px;
+  	padding-bottom: 5px;	
+  	bottom:0;
+  	left:0;
+  	text-align: center;
+  	font-size: 12px;
+}
